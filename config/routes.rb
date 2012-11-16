@@ -1,4 +1,6 @@
 NewIssues::Application.routes.draw do
+  get "timeline/index"
+
   resources :projects
 
   resources :issues

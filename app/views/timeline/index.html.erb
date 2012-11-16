@@ -1,0 +1,9 @@
+<h1>Timeline</h1>
+
+<% @timelines.each do |timeline| %>
+<ul>
+  <li><%= timeline.content %></li>
+  <li><%= link_to timeline.timelineable.title, timeline.timelineable %></li>
+  <li><%= time_ago_in_words timeline.created_at %> ago</li>
+</ul>
+<% end %>
